@@ -4,8 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="../sass/custom.scss">
+    <link rel="stylesheet" href="{{ asset('css/carousel.css') }}">
+    <link rel="stylesheet" href="{{ asset('sass/custom.scss') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -44,7 +49,7 @@
                             </div>
                         </div>
                         <div class="col-5 animated zoomIn" data-scs-animation-in="zoomIn" data-scs-animation-delay="500" style="animation-delay: 500ms; opacity: 1">
-                            <img src="/images/img1.png" class="block" alt="...">
+                            <img src={{asset('../../../images/img1.png')}} class="block" alt="...">
                         </div>
                     </div>
                 </div>
@@ -69,7 +74,7 @@
                             </div>
                         </div>
                         <div class="col-5 animated zoomIn" data-scs-animation-in="zoomIn" data-scs-animation-delay="500" style="animation-delay: 500ms; opacity: 1">
-                            <img src="/images/img2.png" class="block" alt="...">
+                            <img src={{asset('../../../images/img2.png')}} class="block" alt="...">
                         </div>
                     </div>
                 </div>
@@ -94,7 +99,7 @@
                             </div>
                         </div>
                         <div class="col-5 animated zoomIn" data-scs-animation-in="zoomIn" data-scs-animation-delay="500" style="animation-delay: 500ms; opacity: 1">
-                            <img src="/images/img3.png" class="block" alt="...">
+                            <img src={{asset('../../../images/img3.png')}} class="block" alt="...">
                         </div>
                     </div>
                 </div>
